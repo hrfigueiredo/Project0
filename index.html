@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Searching... v2</title>
+        <title>Google Search</title>
     </head>
+    <style type="text/css">
+        .form {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           } 
+   </style>
     <body>
-        <a href="https://hrfigueiredo.github.io/Project0/qimages.html">W3docs.com</a>
-        <a href="https://hrfigueiredo.github.io/Project0/qadvanced.html">W3docs.com</a>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div align="right">
+            <a href="https://hrfigueiredo.github.io/Project0/qimages.html">Google Image Search</a>
+            <a href="https://hrfigueiredo.github.io/Project0/qadvanced.html">Google Advanced Search</a>
+        </div>
+        <div class="form">
+            <form action="https://google.com/search">
+                <input type="text" name="q">
+                <input type="submit" method="get" value="Google Search">
+            </form>
+        </div>
     </body>
 </html>
