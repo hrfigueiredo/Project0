@@ -4,11 +4,22 @@
         <title>Google Search</title>
     </head>
     <style type="text/css">
+        .centralizar {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            height: 100vh;
+            width: 100%;
+        }
+
         .form {
-           position: absolute;
-           top: 50%;
-           left: 50%;
-           border-radius: 15px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
            } 
    </style>
     <body>
@@ -16,13 +27,16 @@
             <a href="https://hrfigueiredo.github.io/Project0/qimages.html">Image Search</a>
             <a href="https://hrfigueiredo.github.io/Project0/qadvanced.html">Advanced Search</a>
         </div>
-        <div class="form">
+        <div class="centralizar">
             <form action="https://google.com/search">
-                <input type="text" name="q">
-                <br> 
-                    <input type="submit" method="get" value="Google Search">
-                </br>
-            </form>
+                <input   class="form"  type="text" name="q"></input>
+                 <br><br>
+               <div align="center">
+                    <input type="submit" method="get" value="Google Search"></input>
+               </div>
         </div>
+
+            </form>
+       </div>
     </body>
 </html>
