@@ -4,38 +4,34 @@
         <title>Google Search</title>
     </head>
     <style type="text/css">
-        .centralizar {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            align-items:center;
-            justify-content:center;
-            height: 100vh;
-            width: 100%;
+        label {
+	        float: left;
+            font-size: 15px;
+            margin: 15px 25px;
+            font-family: arial;
+	        margin: 3px 0;
+            width: 250px;
+        }
+        input {
+            border-radius: 5px;
         }
 
-        .form {
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
-            -webkit-border-radius: 10px;
-           } 
    </style>
     <body>
         <div align="right">
             <a href="https://hrfigueiredo.github.io/Project0/index.html">Google Search</a>
         </div>
-        <div class="centralizar">
-            <form action="https://google.com/search">
-                <input   class="form"  type="text" name="q"></input>
-                 <br><br>
-               <div align="center">
-                    <input type="submit" method="get" value="Google Search"></input>
-               </div>
-        </div>
-
+            <label><font color="red"> Advanced search </font></label>
+            <br><br>
+            <form action="https://www.google.com/search">       
+    	        <label> Find pages with… </label><br /><br />
+                <label> All these words: </label><input type="text" name="as_q" /><br /><br />
+                <label> This exact word or phrase: </label><input type="text" name="as_epq"/><br /><br />
+                <label> Any of these words: </label><input type="text" name="as_oq" /><br /><br />
+                <label> None of these words: </label><input type="text" name="as_eq" /><br /><br />
+                <div align="center">
+                    <input type="submit" method="get" value="Google Search" />
+                </div>
             </form>
-       </div>
     </body>
 </html>
