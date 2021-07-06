@@ -4,7 +4,7 @@
         <title>Google Search</title>
     </head>
     <style type="text/css">
-        .centralizar {
+        .centered {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -12,8 +12,9 @@
             display: flex;
             align-items:center;
             justify-content:center;
-            height: 100vh;
+            height: 500px;
             width: 100%;
+
         }
 
         .form {
@@ -21,22 +22,36 @@
                 width: 500px;
                 height: 25px;
             }
-   </style>
+
+        .button {
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 27px;
+            text-decoration: rgb(32, 33, 36);
+            text-align: center;	
+            white-space: pre;
+            background-color: rgb(248, 249, 250);
+            height: 36px;
+            width: 140.4px;
+            cursor: pointer
+        }
+    </style>
     <body>
         <div align="right">
             <a href="https://hrfigueiredo.github.io/Project0/index.html">Google Search</a>
         </div>
-        <div class="centralizar">
-            <form action="https://google.com/search">
-                <input   class="form"  type="text" name="q"></input>
-                <input   type="hidden" name="tbm" value="isch"></input>
-                 <br><br>
-               <div align="center">
-                    <input type="submit" method="get" value="Google Search"></input>
-               </div>
-        </div>
-
+        <div class="centered">
+            <form action="https://google.com/search">            
+                <input   class="form"  type="text" name="q" />
+                <input   type="hidden" name="tbm" value="isch" /><br /><br />
+                <div align="center">
+                    <input class="button" type="submit" method="get" value="Google Search" />
+                </div>
             </form>
-       </div>
+        </div>
     </body>
 </html>
