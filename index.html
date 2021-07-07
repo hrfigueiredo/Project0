@@ -47,12 +47,16 @@
         </div>
         <div class="centered">
             <form action="https://google.com/search">  
-                <input   class="form"  type="text" name="q" /><br /><br />           
-                <div align="center">
+                <input   class="form"  type="text" name="q" /><br /><br /> 
+                <div align="center">          
                     <input class="button" type="submit" method="get" value="Google Search" />
-                    <input class="button" type="submit" method="post" value="I’m Feeling Lucky" />
-                </div>
             </form>
+                    <form action="https://google.com/search">  
+                        <input class="button" type="submit" method="post" value="I’m Feeling Lucky" />
+                        <input   type="hidden" name="btnI" value="I" />
+                        <input   type="hidden" name="q" value="testes" />
+                    </form>
+                </div>         
         </div>
     </body>
 </html>
