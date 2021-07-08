@@ -12,7 +12,7 @@
             display: flex;
             align-items:center;
             justify-content:center;
-            height: 500px;
+            height: 400px;
             width: 100%;
 
         }
@@ -48,16 +48,22 @@
         <div class="centered">
             <form action="https://google.com/search">  
                 <input   class="form"  type="text" name="q" /><br /><br /> 
-                <div align="center">          
+        </div>
+        <table align="center">
+            <tr>
+                <td>
                     <input class="button" type="submit" method="get" value="Google Search" />
-            </form>
+                    </form>
+                </td>
+                <td>
                     <form action="https://google.com/search">  
                         <input class="button" type="submit" method="post" value="I’m Feeling Lucky" />
-                        <input   type="hidden" name="btnI" value="I" />
-                        <input   type="hidden" name="q" value="testes" />
-                        <input   type="hidden" name="iflsig" value="AINFCbYAAAAAYOUxWBmiL5wdWCjmrG-Z1XeY4HWZg3jN" />
+                        <input type="hidden" name="btnI" value="" />
+                        <input type="hidden" name="q" value="testes" />
+                        <input type="hidden" name="iflsig" value="AINFCbYAAAAAYOJO3H_yNptt5Unu-eCKkrgxM2iUuZ99"   />
                     </form>
-                </div>         
-        </div>
+                </td>
+            </tr>
+        </table>         
     </body>
 </html>
